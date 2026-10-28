@@ -1,0 +1,371 @@
+{
+  "users": [
+    {
+      "id": "U005",
+      "name": "QuickShip Admin",
+      "email": "abc@123",
+      "password": "12345678",
+      "role": "admin",
+      "status": "active"
+    },
+    {
+      "id": "U001",
+      "name": "Arun Kumar",
+      "email": "admin@quickship.test",
+      "password": "Admin@123",
+      "role": "admin",
+      "status": "active"
+    },
+    {
+      "id": "U002",
+      "name": "Priya Sharma",
+      "email": "branch@quickship.test",
+      "password": "Branch@123",
+      "role": "branch_staff",
+      "branchId": "BR001",
+      "status": "active"
+    },
+    {
+      "id": "U003",
+      "name": "Rahul Menon",
+      "email": "agent@quickship.test",
+      "password": "Agent@123",
+      "role": "delivery_agent",
+      "agentId": "AG001",
+      "status": "active"
+    },
+    {
+      "id": "U004",
+      "name": "Sneha Iyer",
+      "email": "customer@quickship.test",
+      "password": "Customer@123",
+      "customerId": "CU001",
+      "role": "customer",
+      "status": "active"
+    },
+    {
+      "id": "BSHgJJvKYSM",
+      "name": "Swarna Augasta",
+      "email": "saugasta97@gmail.com",
+      "password": "123456789",
+      "role": "customer",
+      "status": "active",
+      "customerId": "CU003"
+    }
+  ],
+  "customers": [
+    {
+      "id": "CU001",
+      "name": "Sneha Iyer",
+      "email": "customer@quickship.test",
+      "phone": "9876543210",
+      "address": "12 Lake View Road",
+      "city": "Chennai",
+      "state": "Tamil Nadu",
+      "pincode": "600001"
+    },
+    {
+      "id": "CU002",
+      "name": "Vikram Raj",
+      "email": "vikram@example.test",
+      "phone": "9876543211",
+      "address": "25 Park Street",
+      "city": "Coimbatore",
+      "state": "Tamil Nadu",
+      "pincode": "641001"
+    },
+    {
+      "id": "x1MOMO1j4Xo",
+      "name": "Swarna Augasta",
+      "email": "saugasta97@gmail.com",
+      "phone": "9876543210",
+      "address": "",
+      "city": "",
+      "state": "",
+      "pincode": ""
+    },
+    {
+      "id": "ZPRGyiLE0zg",
+      "name": "Meera",
+      "email": "meera@example.com",
+      "phone": "9876543212",
+      "address": "Lake view street",
+      "city": "Bangalore",
+      "state": "Telangana",
+      "pincode": "654345"
+    }
+  ],
+  "branches": [
+    {
+      "id": "BR001",
+      "name": "Chennai Central",
+      "code": "CHN01",
+      "address": "10 Mount Road",
+      "city": "Chennai",
+      "contact": "9876543212",
+      "manager": "Priya Sharma",
+      "status": "active"
+    },
+    {
+      "id": "BR002",
+      "name": "Coimbatore Branch",
+      "code": "CBE01",
+      "address": "20 Avinashi Road",
+      "city": "Coimbatore",
+      "contact": "04220000001",
+      "manager": "Karthik Rao",
+      "status": "active"
+    }
+  ],
+  "deliveryAgents": [
+    {
+      "id": "AG001",
+      "name": "Rahul Menon",
+      "email": "agent@quickship.test",
+      "phone": "9876543212",
+      "branchId": "BR001",
+      "vehicleNumber": "TN01AB1234",
+      "vehicleType": "bike",
+      "availability": "busy"
+    },
+    {
+      "id": "AG002",
+      "name": "Karthik Rao",
+      "email": "karthik@example.test",
+      "phone": "9876543213",
+      "branchId": "BR002",
+      "vehicleNumber": "TN38CD5678",
+      "vehicleType": "van",
+      "availability": "busy"
+    },
+    {
+      "name": "Priya",
+      "email": "priya@example.com",
+      "phone": "8765432345",
+      "branchId": "BR001",
+      "vehicleNumber": "TNAL9573",
+      "vehicleType": "van",
+      "availability": "busy",
+      "id": "Vs6xFAYfl6M"
+    },
+    {
+      "name": "Ram",
+      "email": "ram@gmail.com",
+      "phone": "8654323456",
+      "branchId": "BR001",
+      "vehicleNumber": "TNO78940",
+      "vehicleType": "bike",
+      "availability": "busy",
+      "id": "0unvfWty2sg"
+    }
+  ],
+  "parcels": [],
+  "shipments": [
+    {
+      "id": "SH001",
+      "trackingNumber": "QS202610001",
+      "customerId": "CU001",
+      "senderCustomerId": "CU001",
+      "senderName": "Sneha Iyer",
+      "receiverName": "Arun Kumar",
+      "destinationCity": "Chennai",
+      "originBranchId": "BR001",
+      "destinationBranchId": "BR002",
+      "currentBranchId": "BR001",
+      "assignedAgentId": "AG001",
+      "status": "delivered",
+      "createdAt": "2026-10-06T09:30:00"
+    },
+    {
+      "id": "SH002",
+      "trackingNumber": "QS202610002",
+      "customerId": "CU001",
+      "senderCustomerId": "CU001",
+      "senderName": "Sneha Iyer",
+      "receiverName": "Priya Sharma",
+      "destinationCity": "Coimbatore",
+      "originBranchId": "BR001",
+      "destinationBranchId": "BR002",
+      "currentBranchId": "BR001",
+      "assignedAgentId": "Vs6xFAYfl6M",
+      "status": "agent_assigned",
+      "createdAt": "2026-10-07T11:00:00"
+    },
+    {
+      "id": "SH003",
+      "trackingNumber": "QS202610003",
+      "customerId": "CU001",
+      "senderCustomerId": "CU001",
+      "senderName": "Sneha Iyer",
+      "receiverName": "Vikram Raj",
+      "destinationCity": "Coimbatore",
+      "originBranchId": "BR001",
+      "destinationBranchId": "BR002",
+      "currentBranchId": "BR002",
+      "assignedAgentId": "AG001",
+      "status": "out_for_delivery",
+      "createdAt": "2026-10-09T14:15:00"
+    },
+    {
+      "id": "SH004",
+      "trackingNumber": "QS202610004",
+      "customerId": "CU001",
+      "senderCustomerId": "CU001",
+      "senderName": "Sneha Iyer",
+      "receiverName": "Arun Kumar",
+      "destinationCity": "Chennai",
+      "originBranchId": "BR001",
+      "destinationBranchId": "BR001",
+      "currentBranchId": "BR001",
+      "assignedAgentId": "AG001",
+      "status": "branch_received",
+      "createdAt": "2026-10-10T10:45:00"
+    },
+    {
+      "id": "SH005",
+      "trackingNumber": "QS202610005",
+      "customerId": "CU003",
+      "senderCustomerId": "CU003",
+      "senderName": "Swarna Augasta",
+      "receiverName": "Priya Sharma",
+      "destinationCity": "Chennai",
+      "originBranchId": "BR001",
+      "destinationBranchId": "BR001",
+      "currentBranchId": "BR001",
+      "assignedAgentId": "AG001",
+      "status": "delivered",
+      "createdAt": "2026-10-11T12:20:00"
+    },
+    {
+      "id": "SH006",
+      "trackingNumber": "QS202610006",
+      "customerId": "CU003",
+      "senderCustomerId": "CU003",
+      "senderName": "Swarna Augasta",
+      "receiverName": "Vikram Raj",
+      "destinationCity": "Coimbatore",
+      "originBranchId": "BR001",
+      "destinationBranchId": "BR002",
+      "currentBranchId": "BR001",
+      "assignedAgentId": "AG001",
+      "status": "agent_assigned",
+      "createdAt": "2026-10-12T09:00:00",
+      "updatedAt": "2026-10-13T13:00:51.110Z"
+    },
+    {
+      "id": "Dv7VnWl9tu8",
+      "trackingNumber": "QS1809345160",
+      "senderName": "Priya",
+      "receiverName": "Riya",
+      "destinationCity": "Bangalore",
+      "weight": 1,
+      "deliveryType": "standard",
+      "status": "agent_assigned",
+      "createdAt": "2026-10-12T12:49:05.160Z",
+      "assignedAgentId": "0unvfWty2sg"
+    },
+    {
+      "id": "SBQWNTEpARU",
+      "trackingNumber": "QS1881638286",
+      "senderName": "Monica",
+      "receiverName": "Sherin",
+      "destinationCity": "Pune",
+      "weight": 1,
+      "deliveryType": "express",
+      "status": "shipment_created",
+      "createdAt": "2026-10-13T08:53:58.286Z"
+    },
+    {
+      "id": "A6nvobtfpOE",
+      "trackingNumber": "QS1895044237",
+      "customerId": "CU001",
+      "senderName": "Lavanya",
+      "senderPhone": "8774452382",
+      "senderAddress": "Flat 23, VM Street, Mylapore Chennai-4",
+      "receiverName": "Vinitha",
+      "receiverPhone": "9741268136",
+      "receiverAddress": "Pallipalayam, Coimbatore",
+      "destinationCity": "Coimbatore",
+      "originBranchId": "BR001",
+      "destinationBranchId": "BR002",
+      "currentBranchId": "BR001",
+      "weight": 5,
+      "deliveryType": "standard",
+      "estimatedPrice": 140,
+      "status": "shipment_created",
+      "createdAt": "2026-10-13T12:37:24.237Z"
+    }
+  ],
+  "trackingHistory": [
+    {
+      "shipmentId": "SH006",
+      "trackingNumber": "QS202610006",
+      "status": "agent_assigned",
+      "location": "Delivery location",
+      "description": "Delivery status updated to Agent Assigned.",
+      "timestamp": "2026-10-13T13:00:51.110Z",
+      "updatedBy": "U003",
+      "id": "KslUcwUVxHo"
+    }
+  ],
+  "payments": [
+    {
+      "id": "PAY001",
+      "shipmentId": "SH001",
+      "amount": 150,
+      "status": "paid",
+      "createdAt": "2026-10-06T10:00:00"
+    },
+    {
+      "id": "PAY002",
+      "shipmentId": "SH002",
+      "amount": 250,
+      "status": "paid",
+      "createdAt": "2026-10-07T11:30:00"
+    },
+    {
+      "id": "PAY003",
+      "shipmentId": "SH003",
+      "amount": 200,
+      "status": "paid",
+      "createdAt": "2026-10-09T14:30:00"
+    },
+    {
+      "id": "PAY004",
+      "shipmentId": "SH005",
+      "amount": 180,
+      "status": "paid",
+      "createdAt": "2026-10-11T12:45:00"
+    }
+  ],
+  "pricing": [
+    {
+      "id": "PR001",
+      "deliveryType": "standard",
+      "baseWeight": 2,
+      "basePrice": 50,
+      "additionalKgPrice": 30,
+      "active": true
+    },
+    {
+      "id": "PR002",
+      "deliveryType": "express",
+      "baseWeight": 1,
+      "basePrice": 100,
+      "additionalKgPrice": 30,
+      "active": true
+    },
+    {
+      "deliveryType": "same_day",
+      "baseWeight": 1,
+      "basePrice": 20,
+      "additionalKgPrice": 30,
+      "active": true,
+      "id": "JSXrTTrxBkg"
+    }
+  ],
+  "notifications": [],
+  "activities": [],
+  "settings": [],
+  "$schema": "./node_modules/json-server/schema.json"
+}
